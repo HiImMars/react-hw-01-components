@@ -22,6 +22,6 @@
   padding: 6px;
   text-transform: capitalize;
 
-  border-top: 2px solid rgb(52, 112, 122);
-  border-bottom: 2px solid rgb(52, 112, 122);
+  border-top: 1px solid rgb(52, 112, 122);
+  border-bottom: 1px solid rgb(52, 112, 122);
 }
