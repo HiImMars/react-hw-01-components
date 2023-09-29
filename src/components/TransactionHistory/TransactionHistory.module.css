@@ -15,6 +15,13 @@
 
 .tr {
   border-bottom: 1px solid #ccc;
+
+  transition: background-color 200ms linear;
+}
+
+.tr:hover {
+  background-color: #555;
+  cursor: pointer;
 }
 
 .th,
