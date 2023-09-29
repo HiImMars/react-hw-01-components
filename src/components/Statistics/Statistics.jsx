@@ -1,9 +1,14 @@
 import data from '../Data/data.json';
 import css from './Statistics.module.css';
+import clsx from 'clsx';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section className={css.statistics} key={stats.id}>
+    <section
+      className={clsx(css.statistics, css.gradientborder)}
+      key={stats.id}
+    >
+      <span></span>
       <h2 className={css.title}>{title}</h2>
 
       <ul className={css.statlist}>

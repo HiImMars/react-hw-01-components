@@ -7,12 +7,14 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 6px;
+  background-color: rgb(250, 244, 235);
+
+  border-radius: 6px;
 }
 
 .description {
   padding: 6px;
+  border-bottom: 2px solid black;
 }
 
 .avatar {
@@ -48,7 +50,6 @@
 .stats {
   list-style: none;
   display: flex;
-  gap: 10px;
   justify-content: space-between;
 }
 
@@ -57,6 +58,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 8px;
+
+  transition: background-color 300ms ease-in, color 300ms ease-in;
+}
+
+.item:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.item:hover {
+  background-color: #6d8c70;
+  color: white;
 }
 
 .label {
@@ -66,5 +79,5 @@
 
 .quantity {
   font-size: 18px;
-  color: blue;
+  color: rgb(255, 102, 0);
 }
